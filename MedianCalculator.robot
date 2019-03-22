@@ -15,6 +15,7 @@ ${PLATFORM_NAME}          Android
 ${PLATFORM_VERSION}    7.1.1
 ${DEVICE_NAME}         Nexus One API 25
 ${APP}                 C:\\Users\\Sindhu_Pichappa\\AppData\\Local\\Android\\Sdk\\platform-tools\\CalculaMediaFinal.apk
+#Specify your respective file path of .apk file
 ${APP_PACKAGE}         com.exemplo.calculamediafinal
 ${APP_ACTIVITY}        com.exemplo.calculamediafinal.MediaActivity
 ${InputNumber1_id}     id=txtNota1
