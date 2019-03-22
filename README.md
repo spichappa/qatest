@@ -1,0 +1,2 @@
+# qatest
+MobileAppTesting
