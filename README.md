@@ -1,6 +1,13 @@
-# qatest
-MobileAppTesting
+MobileTestAutomationProject
+
+MobileAppTesting Prerequisites:
+Android Studio 3.3
+Python27
+pip command installations
+Node.jz 10.15.3 LTS
+appium 1.6.5
 Appium library for RobotFramework
+
 
 Introduction
 AppiumLibrary is an appium testing library for RobotFramework.
@@ -21,10 +28,8 @@ The recommended installation method is using pip:
 pip install robotframework-appiumlibrary
 Using setup.py
 setup.py
-
-git clone https://github.com/jollychang/robotframework-appiumlibrary.git
-cd robotframework-appiumlibrary
 python setup.py install
+
 Directory Layout
 demo/
 A simple demonstration, with an Android application and RF test suite
@@ -32,7 +37,8 @@ doc/
 Keyword documentation
 src/
 Python source code
+
 Usage
 To write tests with Robot Framework and AppiumLibrary, AppiumLibrary must be imported into your RF test suite. See Robot Framework User Guide for more information.
 
-As it uses Appium make sure your Appium server is up and running. For how to use Appium please refer to Appium Documentation
+As it uses Appium make sure your Appium server is up and running. For how to use Appium please refer to  Appium Documentation
