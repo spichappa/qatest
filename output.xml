@@ -1,0 +1,864 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190322 21:23:39.013" generator="Robot 3.1.1 (Python 2.7.15 on win32)">
+<suite source="C:\Users\Sindhu_Pichappa\.windows-build-tools\python27\Scripts\MedianCalculator.robot" id="s1" name="MedianCalculator">
+<kw type="setup" name="Open Android Calculator Application">
+<doc>Keyword to Open the Android Median Calculator App via Appium</doc>
+<kw name="Open Application" library="AppiumLibrary">
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<arguments>
+<arg>${REMOTE_URL}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME} app=${APP}</arg>
+<arg>automationName=appium</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+</arguments>
+<status status="PASS" endtime="20190322 21:23:53.904" starttime="20190322 21:23:40.334"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:23:53.904" starttime="20190322 21:23:40.334"></status>
+</kw>
+<test id="s1-t1" name="MediaCalclulatorAndroid Application TestCase01">
+<kw type="setup" name="Launch Application" library="AppiumLibrary">
+<doc>Launch application. Application can be launched while Appium session running.
+This keyword can be used to launch application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:23:58.057" starttime="20190322 21:23:53.906"></status>
+</kw>
+<kw name="Verify All Page Elements Are Present and Clear the Input Field Values">
+<doc>Keyword to verify all the page elements of Median Calculator App are present and reset their values</doc>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.442" level="INFO">Current page contains element 'id=txtNota1'.</msg>
+<status status="PASS" endtime="20190322 21:24:00.442" starttime="20190322 21:23:58.058"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.540" level="INFO">Current page contains element 'id=txtNota2'.</msg>
+<status status="PASS" endtime="20190322 21:24:00.541" starttime="20190322 21:24:00.442"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.638" level="INFO">Current page contains element 'id=txtNota3'.</msg>
+<status status="PASS" endtime="20190322 21:24:00.638" starttime="20190322 21:24:00.541"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${CalculatorButton_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.737" level="INFO">Current page contains element 'id=btnCalcular'.</msg>
+<status status="PASS" endtime="20190322 21:24:00.737" starttime="20190322 21:24:00.639"></status>
+</kw>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.845" level="INFO">Current page contains element 'id=txtMediaFinal'.</msg>
+<status status="PASS" endtime="20190322 21:24:00.845" starttime="20190322 21:24:00.737"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:00.846" level="INFO">Clear text field 'id=txtNota1'</msg>
+<status status="PASS" endtime="20190322 21:24:06.370" starttime="20190322 21:24:00.845"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:06.375" level="INFO">Clear text field 'id=txtNota2'</msg>
+<status status="PASS" endtime="20190322 21:24:09.192" starttime="20190322 21:24:06.371"></status>
+</kw>
+<kw name="Clear Text" library="AppiumLibrary">
+<doc>Clears the text field identified by `locator`.</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:09.197" level="INFO">Clear text field 'id=txtNota3'</msg>
+<status status="PASS" endtime="20190322 21:24:11.534" starttime="20190322 21:24:09.193"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:24:11.535" starttime="20190322 21:23:58.057"></status>
+</kw>
+<kw type="teardown" name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:12.526" starttime="20190322 21:24:11.535"></status>
+</kw>
+<doc>TestCase to Verify all page elements are present and clear the field values</doc>
+<tags>
+<tag>smoke</tag>
+<tag>TC01</tag>
+</tags>
+<status status="PASS" endtime="20190322 21:24:12.527" critical="yes" starttime="20190322 21:23:53.904"></status>
+</test>
+<test id="s1-t2" name="MediaCalclulatorAndroid Application TestCase02">
+<kw type="setup" name="Launch Application" library="AppiumLibrary">
+<doc>Launch application. Application can be launched while Appium session running.
+This keyword can be used to launch application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:16.496" starttime="20190322 21:24:12.530"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<assign>
+<var>${InputNumber1_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:16.497" level="INFO">${InputNumber1_Val} = 5</msg>
+<status status="PASS" endtime="20190322 21:24:16.497" starttime="20190322 21:24:16.497"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<assign>
+<var>${InputNumber2_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:16.498" level="INFO">${InputNumber2_Val} = 3</msg>
+<status status="PASS" endtime="20190322 21:24:16.498" starttime="20190322 21:24:16.498"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${InputNumber3_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:16.498" level="INFO">${InputNumber3_Val} = 2</msg>
+<status status="PASS" endtime="20190322 21:24:16.498" starttime="20190322 21:24:16.498"></status>
+</kw>
+<kw name="Populate Input Field Values">
+<doc>Keyword to populate data inputs required for the Android Median Calculator App</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+<arg>${input_val01}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:16.500" level="INFO">Setting text '5' into text field 'id=txtNota1'</msg>
+<status status="PASS" endtime="20190322 21:24:22.368" starttime="20190322 21:24:16.499"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+<arg>${input_val02}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:22.370" level="INFO">Setting text '3' into text field 'id=txtNota2'</msg>
+<status status="PASS" endtime="20190322 21:24:24.118" starttime="20190322 21:24:22.368"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+<arg>${input_val03}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:24.121" level="INFO">Setting text '2' into text field 'id=txtNota3'</msg>
+<status status="PASS" endtime="20190322 21:24:25.850" starttime="20190322 21:24:24.119"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CalculatorButton_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:25.852" level="INFO">Clicking element 'id=btnCalcular'.</msg>
+<status status="PASS" endtime="20190322 21:24:26.555" starttime="20190322 21:24:25.850"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:24:26.556" starttime="20190322 21:24:16.499"></status>
+</kw>
+<kw name="Calculate the average of the input numbers">
+<doc>Keyword to calculate average of three numbers</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<assign>
+<var>${get_AvgVal}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${input_val01}+${input_val02}+${input_val03}</arg>
+</arguments>
+<assign>
+<var>${findSumOfAll3FieldInputValues}</var>
+</assign>
+<msg timestamp="20190322 21:24:26.558" level="INFO">${findSumOfAll3FieldInputValues} = 10</msg>
+<status status="PASS" endtime="20190322 21:24:26.558" starttime="20190322 21:24:26.557"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${findSumOfAll3FieldInputValues}/${TotalNumberOfInputs}</arg>
+</arguments>
+<assign>
+<var>${findAverageVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:26.558" level="INFO">${findAverageVal} = 3</msg>
+<status status="PASS" endtime="20190322 21:24:26.558" starttime="20190322 21:24:26.558"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${findAverageVal}</arg>
+</arguments>
+<assign>
+<var>${finalVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:26.559" level="INFO">${finalVal} = 3</msg>
+<status status="PASS" endtime="20190322 21:24:26.559" starttime="20190322 21:24:26.558"></status>
+</kw>
+<msg timestamp="20190322 21:24:26.559" level="INFO">${get_AvgVal} = 3</msg>
+<status status="PASS" endtime="20190322 21:24:26.559" starttime="20190322 21:24:26.556"></status>
+</kw>
+<kw name="Perform Median Calculating Operation with Valid Inputs">
+<doc>Keyword to perform median value calculation through the app and verifying its result for valid inputs</doc>
+<arguments>
+<arg>${get_AvgVal}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:27.317" level="INFO">Current page contains element 'id=txtMediaFinal'.</msg>
+<status status="PASS" endtime="20190322 21:24:27.318" starttime="20190322 21:24:26.560"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:27.506" level="INFO">Element 'id=txtMediaFinal' text is '3.3333333333333335' </msg>
+<msg timestamp="20190322 21:24:27.506" level="INFO">${getCalculatedMedianVal} = 3.3333333333333335</msg>
+<status status="PASS" endtime="20190322 21:24:27.506" starttime="20190322 21:24:27.318"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${getCalculatedMedianVal}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianResult}</var>
+</assign>
+<msg timestamp="20190322 21:24:27.507" level="INFO">${getCalculatedMedianResult} = 3.3333333333333335</msg>
+<status status="PASS" endtime="20190322 21:24:27.507" starttime="20190322 21:24:27.506"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>${actual_AvgValue}</arg>
+<arg>precision=0</arg>
+</arguments>
+<msg timestamp="20190322 21:24:27.507" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'int'&gt;</msg>
+<status status="PASS" endtime="20190322 21:24:27.507" starttime="20190322 21:24:27.507"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>console=yes</arg>
+</arguments>
+<msg timestamp="20190322 21:24:27.508" level="INFO">3.3333333333333335</msg>
+<status status="PASS" endtime="20190322 21:24:27.508" starttime="20190322 21:24:27.507"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:24:27.509" starttime="20190322 21:24:26.559"></status>
+</kw>
+<kw type="teardown" name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:28.689" starttime="20190322 21:24:27.510"></status>
+</kw>
+<doc>TestCase to verify positive case given all fields values and check Median Calculation is working</doc>
+<tags>
+<tag>core</tag>
+<tag>TC02</tag>
+</tags>
+<status status="PASS" endtime="20190322 21:24:28.689" critical="yes" starttime="20190322 21:24:12.529"></status>
+</test>
+<test id="s1-t3" name="MediaCalclulatorAndroid Application TestCase03">
+<kw type="setup" name="Launch Application" library="AppiumLibrary">
+<doc>Launch application. Application can be launched while Appium session running.
+This keyword can be used to launch application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:32.787" starttime="20190322 21:24:28.695"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098765</arg>
+</arguments>
+<assign>
+<var>${InputNumber1_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:32.789" level="INFO">${InputNumber1_Val} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098765</msg>
+<status status="PASS" endtime="20190322 21:24:32.789" starttime="20190322 21:24:32.788"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766</arg>
+</arguments>
+<assign>
+<var>${InputNumber2_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:32.789" level="INFO">${InputNumber2_Val} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766</msg>
+<status status="PASS" endtime="20190322 21:24:32.789" starttime="20190322 21:24:32.789"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098767</arg>
+</arguments>
+<assign>
+<var>${InputNumber3_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:32.790" level="INFO">${InputNumber3_Val} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098767</msg>
+<status status="PASS" endtime="20190322 21:24:32.790" starttime="20190322 21:24:32.790"></status>
+</kw>
+<kw name="Populate Input Field Values">
+<doc>Keyword to populate data inputs required for the Android Median Calculator App</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+<arg>${input_val01}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:32.793" level="INFO">Setting text '1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098765' into text field 'id=txtNota1'</msg>
+<status status="PASS" endtime="20190322 21:24:39.833" starttime="20190322 21:24:32.791"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+<arg>${input_val02}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:39.837" level="INFO">Setting text '1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766' into text field 'id=txtNota2'</msg>
+<status status="PASS" endtime="20190322 21:24:43.881" starttime="20190322 21:24:39.833"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+<arg>${input_val03}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:43.883" level="INFO">Setting text '1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098767' into text field 'id=txtNota3'</msg>
+<status status="PASS" endtime="20190322 21:24:47.881" starttime="20190322 21:24:43.881"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CalculatorButton_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:47.884" level="INFO">Clicking element 'id=btnCalcular'.</msg>
+<status status="PASS" endtime="20190322 21:24:48.588" starttime="20190322 21:24:47.882"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:24:48.588" starttime="20190322 21:24:32.790"></status>
+</kw>
+<kw name="Calculate the average of the input numbers">
+<doc>Keyword to calculate average of three numbers</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<assign>
+<var>${get_AvgVal}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${input_val01}+${input_val02}+${input_val03}</arg>
+</arguments>
+<assign>
+<var>${findSumOfAll3FieldInputValues}</var>
+</assign>
+<msg timestamp="20190322 21:24:48.589" level="INFO">${findSumOfAll3FieldInputValues} = 3640370367029629536403703670296295364037036702962953640370367029629536403703670296295364037036702962953640370367029629536403703670296298</msg>
+<status status="PASS" endtime="20190322 21:24:48.589" starttime="20190322 21:24:48.589"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${findSumOfAll3FieldInputValues}/${TotalNumberOfInputs}</arg>
+</arguments>
+<assign>
+<var>${findAverageVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:48.590" level="INFO">${findAverageVal} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766</msg>
+<status status="PASS" endtime="20190322 21:24:48.590" starttime="20190322 21:24:48.589"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${findAverageVal}</arg>
+</arguments>
+<assign>
+<var>${finalVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:48.590" level="INFO">${finalVal} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766</msg>
+<status status="PASS" endtime="20190322 21:24:48.590" starttime="20190322 21:24:48.590"></status>
+</kw>
+<msg timestamp="20190322 21:24:48.590" level="INFO">${get_AvgVal} = 1213456789009876512134567890098765121345678900987651213456789009876512134567890098765121345678900987651213456789009876512134567890098766</msg>
+<status status="PASS" endtime="20190322 21:24:48.590" starttime="20190322 21:24:48.588"></status>
+</kw>
+<kw name="Perform Median Calculating Operation with Valid Inputs">
+<doc>Keyword to perform median value calculation through the app and verifying its result for valid inputs</doc>
+<arguments>
+<arg>${get_AvgVal}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:49.322" level="INFO">Current page contains element 'id=txtMediaFinal'.</msg>
+<status status="PASS" endtime="20190322 21:24:49.322" starttime="20190322 21:24:48.591"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianVal}</var>
+</assign>
+<msg timestamp="20190322 21:24:49.454" level="INFO">Element 'id=txtMediaFinal' text is '1.2134567890098766E135' </msg>
+<msg timestamp="20190322 21:24:49.454" level="INFO">${getCalculatedMedianVal} = 1.2134567890098766E135</msg>
+<status status="PASS" endtime="20190322 21:24:49.454" starttime="20190322 21:24:49.322"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${getCalculatedMedianVal}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianResult}</var>
+</assign>
+<msg timestamp="20190322 21:24:49.455" level="INFO">${getCalculatedMedianResult} = 1.2134567890098766E135</msg>
+<status status="PASS" endtime="20190322 21:24:49.455" starttime="20190322 21:24:49.455"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>${actual_AvgValue}</arg>
+<arg>precision=0</arg>
+</arguments>
+<msg timestamp="20190322 21:24:49.455" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'long'&gt;</msg>
+<status status="PASS" endtime="20190322 21:24:49.455" starttime="20190322 21:24:49.455"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>console=yes</arg>
+</arguments>
+<msg timestamp="20190322 21:24:49.456" level="INFO">1.2134567890098766E135</msg>
+<status status="PASS" endtime="20190322 21:24:49.456" starttime="20190322 21:24:49.456"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:24:49.456" starttime="20190322 21:24:48.591"></status>
+</kw>
+<kw type="teardown" name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:50.494" starttime="20190322 21:24:49.457"></status>
+</kw>
+<doc>TestCase to verify positive case given all fields values and check Median Calculation is working</doc>
+<tags>
+<tag>full</tag>
+<tag>TC03</tag>
+</tags>
+<status status="PASS" endtime="20190322 21:24:50.495" critical="yes" starttime="20190322 21:24:28.692"></status>
+</test>
+<test id="s1-t4" name="MediaCalclulatorAndroid Application TestCase04">
+<kw type="setup" name="Launch Application" library="AppiumLibrary">
+<doc>Launch application. Application can be launched while Appium session running.
+This keyword can be used to launch application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:24:53.970" starttime="20190322 21:24:50.500"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${InputNumber1_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:53.971" level="INFO">${InputNumber1_Val} = 0</msg>
+<status status="PASS" endtime="20190322 21:24:53.971" starttime="20190322 21:24:53.971"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${InputNumber2_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:53.972" level="INFO">${InputNumber2_Val} = 0</msg>
+<status status="PASS" endtime="20190322 21:24:53.972" starttime="20190322 21:24:53.972"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>0</arg>
+</arguments>
+<assign>
+<var>${InputNumber3_Val}</var>
+</assign>
+<msg timestamp="20190322 21:24:53.972" level="INFO">${InputNumber3_Val} = 0</msg>
+<status status="PASS" endtime="20190322 21:24:53.973" starttime="20190322 21:24:53.972"></status>
+</kw>
+<kw name="Populate Input Field Values">
+<doc>Keyword to populate data inputs required for the Android Median Calculator App</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+<arg>${input_val01}</arg>
+</arguments>
+<msg timestamp="20190322 21:24:53.975" level="INFO">Setting text '0' into text field 'id=txtNota1'</msg>
+<status status="PASS" endtime="20190322 21:25:00.031" starttime="20190322 21:24:53.973"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+<arg>${input_val02}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:00.033" level="INFO">Setting text '0' into text field 'id=txtNota2'</msg>
+<status status="PASS" endtime="20190322 21:25:01.733" starttime="20190322 21:25:00.032"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+<arg>${input_val03}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:01.738" level="INFO">Setting text '0' into text field 'id=txtNota3'</msg>
+<status status="PASS" endtime="20190322 21:25:03.406" starttime="20190322 21:25:01.733"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CalculatorButton_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:03.409" level="INFO">Clicking element 'id=btnCalcular'.</msg>
+<status status="PASS" endtime="20190322 21:25:04.090" starttime="20190322 21:25:03.406"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:25:04.090" starttime="20190322 21:24:53.973"></status>
+</kw>
+<kw name="Calculate the average of the input numbers">
+<doc>Keyword to calculate average of three numbers</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${InputNumber3_Val}</arg>
+</arguments>
+<assign>
+<var>${get_AvgVal}</var>
+</assign>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${input_val01}+${input_val02}+${input_val03}</arg>
+</arguments>
+<assign>
+<var>${findSumOfAll3FieldInputValues}</var>
+</assign>
+<msg timestamp="20190322 21:25:04.093" level="INFO">${findSumOfAll3FieldInputValues} = 0</msg>
+<status status="PASS" endtime="20190322 21:25:04.093" starttime="20190322 21:25:04.092"></status>
+</kw>
+<kw name="Evaluate" library="BuiltIn">
+<doc>Evaluates the given expression in Python and returns the results.</doc>
+<arguments>
+<arg>${findSumOfAll3FieldInputValues}/${TotalNumberOfInputs}</arg>
+</arguments>
+<assign>
+<var>${findAverageVal}</var>
+</assign>
+<msg timestamp="20190322 21:25:04.094" level="INFO">${findAverageVal} = 0</msg>
+<status status="PASS" endtime="20190322 21:25:04.094" starttime="20190322 21:25:04.093"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${findAverageVal}</arg>
+</arguments>
+<assign>
+<var>${finalVal}</var>
+</assign>
+<msg timestamp="20190322 21:25:04.095" level="INFO">${finalVal} = 0</msg>
+<status status="PASS" endtime="20190322 21:25:04.095" starttime="20190322 21:25:04.094"></status>
+</kw>
+<msg timestamp="20190322 21:25:04.096" level="INFO">${get_AvgVal} = 0</msg>
+<status status="PASS" endtime="20190322 21:25:04.096" starttime="20190322 21:25:04.091"></status>
+</kw>
+<kw name="Perform Median Calculating Operation with Valid Inputs">
+<doc>Keyword to perform median value calculation through the app and verifying its result for valid inputs</doc>
+<arguments>
+<arg>${get_AvgVal}</arg>
+</arguments>
+<kw name="Page Should Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page contains `locator` element.</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:04.660" level="INFO">Current page contains element 'id=txtMediaFinal'.</msg>
+<status status="PASS" endtime="20190322 21:25:04.661" starttime="20190322 21:25:04.097"></status>
+</kw>
+<kw name="Get Text" library="AppiumLibrary">
+<doc>Get element text (for hybrid and mobile browser use `xpath` locator, others might cause problem)</doc>
+<arguments>
+<arg>${MedianFinalValue_id}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianVal}</var>
+</assign>
+<msg timestamp="20190322 21:25:04.793" level="INFO">Element 'id=txtMediaFinal' text is '0.0' </msg>
+<msg timestamp="20190322 21:25:04.793" level="INFO">${getCalculatedMedianVal} = 0.0</msg>
+<status status="PASS" endtime="20190322 21:25:04.793" starttime="20190322 21:25:04.661"></status>
+</kw>
+<kw name="Convert To String" library="BuiltIn">
+<doc>Converts the given item to a Unicode string.</doc>
+<arguments>
+<arg>${getCalculatedMedianVal}</arg>
+</arguments>
+<assign>
+<var>${getCalculatedMedianResult}</var>
+</assign>
+<msg timestamp="20190322 21:25:04.794" level="INFO">${getCalculatedMedianResult} = 0.0</msg>
+<status status="PASS" endtime="20190322 21:25:04.794" starttime="20190322 21:25:04.794"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>${actual_AvgValue}</arg>
+<arg>precision=0</arg>
+</arguments>
+<msg timestamp="20190322 21:25:04.794" level="INFO">Argument types are:
+&lt;type 'unicode'&gt;
+&lt;type 'int'&gt;</msg>
+<status status="PASS" endtime="20190322 21:25:04.800" starttime="20190322 21:25:04.794"></status>
+</kw>
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>${getCalculatedMedianResult}</arg>
+<arg>console=yes</arg>
+</arguments>
+<msg timestamp="20190322 21:25:04.801" level="INFO">0.0</msg>
+<status status="PASS" endtime="20190322 21:25:04.801" starttime="20190322 21:25:04.801"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:25:04.802" starttime="20190322 21:25:04.096"></status>
+</kw>
+<kw type="teardown" name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:25:05.917" starttime="20190322 21:25:04.802"></status>
+</kw>
+<doc>TestCase to verify positive case given all fields values and check Median Calculation is working</doc>
+<tags>
+<tag>full</tag>
+<tag>TC04</tag>
+</tags>
+<status status="PASS" endtime="20190322 21:25:05.918" critical="yes" starttime="20190322 21:24:50.498"></status>
+</test>
+<test id="s1-t5" name="MediaCalclulatorAndroid Application TestCase05">
+<kw type="setup" name="Launch Application" library="AppiumLibrary">
+<doc>Launch application. Application can be launched while Appium session running.
+This keyword can be used to launch application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:25:09.743" starttime="20190322 21:25:05.922"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>4</arg>
+</arguments>
+<assign>
+<var>${InputNumber1_Val}</var>
+</assign>
+<msg timestamp="20190322 21:25:09.745" level="INFO">${InputNumber1_Val} = 4</msg>
+<status status="PASS" endtime="20190322 21:25:09.745" starttime="20190322 21:25:09.744"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>2</arg>
+</arguments>
+<assign>
+<var>${InputNumber2_Val}</var>
+</assign>
+<msg timestamp="20190322 21:25:09.745" level="INFO">${InputNumber2_Val} = 2</msg>
+<status status="PASS" endtime="20190322 21:25:09.745" starttime="20190322 21:25:09.745"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>${NoData}</arg>
+</arguments>
+<assign>
+<var>${InputNumber3_Val}</var>
+</assign>
+<msg timestamp="20190322 21:25:09.747" level="INFO">${InputNumber3_Val} = </msg>
+<status status="PASS" endtime="20190322 21:25:09.747" starttime="20190322 21:25:09.746"></status>
+</kw>
+<kw name="Populate Input Field Values">
+<doc>Keyword to populate data inputs required for the Android Median Calculator App</doc>
+<arguments>
+<arg>${InputNumber1_Val}</arg>
+<arg>${InputNumber2_Val}</arg>
+<arg>${NoData}</arg>
+</arguments>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+<arg>${input_val01}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:09.752" level="INFO">Setting text '4' into text field 'id=txtNota1'</msg>
+<status status="PASS" endtime="20190322 21:25:14.478" starttime="20190322 21:25:09.749"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+<arg>${input_val02}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:14.481" level="INFO">Setting text '2' into text field 'id=txtNota2'</msg>
+<status status="PASS" endtime="20190322 21:25:16.336" starttime="20190322 21:25:14.479"></status>
+</kw>
+<kw name="Input Value" library="AppiumLibrary">
+<doc>Sets the given value into text field identified by `locator`. This is an IOS only keyword, input value makes use of set_value</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+<arg>${input_val03}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:16.338" level="INFO">Setting text '' into text field 'id=txtNota3'</msg>
+<status status="PASS" endtime="20190322 21:25:18.029" starttime="20190322 21:25:16.337"></status>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${CalculatorButton_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:18.036" level="INFO">Clicking element 'id=btnCalcular'.</msg>
+<status status="PASS" endtime="20190322 21:25:18.380" starttime="20190322 21:25:18.030"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:25:18.380" starttime="20190322 21:25:09.747"></status>
+</kw>
+<kw name="Perform Median Calculating Operation for Negative Case">
+<doc>Keyword to perform median value calculation through the app and verifying its result for Invalid inputs</doc>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page not contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber1_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:23.693" level="INFO">Current page not contains element 'id=txtNota1'.</msg>
+<status status="PASS" endtime="20190322 21:25:23.693" starttime="20190322 21:25:18.381"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page not contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber2_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:23.749" level="INFO">Current page not contains element 'id=txtNota2'.</msg>
+<status status="PASS" endtime="20190322 21:25:23.749" starttime="20190322 21:25:23.693"></status>
+</kw>
+<kw name="Page Should Not Contain Element" library="AppiumLibrary">
+<doc>Verifies that current page not contains `locator` element.</doc>
+<arguments>
+<arg>${InputNumber3_id}</arg>
+</arguments>
+<msg timestamp="20190322 21:25:23.811" level="INFO">Current page not contains element 'id=txtNota3'.</msg>
+<status status="PASS" endtime="20190322 21:25:23.812" starttime="20190322 21:25:23.750"></status>
+</kw>
+<status status="PASS" endtime="20190322 21:25:23.812" starttime="20190322 21:25:18.380"></status>
+</kw>
+<kw type="teardown" name="Quit Application" library="AppiumLibrary">
+<doc>Quit application. Application can be quit while Appium session is kept alive.
+This keyword can be used to close application during test case or between test cases.</doc>
+<status status="PASS" endtime="20190322 21:25:24.868" starttime="20190322 21:25:23.812"></status>
+</kw>
+<doc>TestCase to input valid 1 digit numbers in any 2 fields and by keeping empty value in 1 field and check Median Calculation fails</doc>
+<tags>
+<tag>core</tag>
+<tag>TC05</tag>
+</tags>
+<status status="PASS" endtime="20190322 21:25:24.869" critical="yes" starttime="20190322 21:25:05.920"></status>
+</test>
+<kw type="teardown" name="Close Application" library="AppiumLibrary">
+<doc>Closes the current application and also close webdriver session.</doc>
+<status status="PASS" endtime="20190322 21:25:28.131" starttime="20190322 21:25:24.874"></status>
+</kw>
+<doc>Android Automation for Mobile Application MedianCalculator - This suite contains all variables, keywords and testcases required for Verifying a mobileApp
+[Author] Sindhu Pichappa</doc>
+<status status="PASS" endtime="20190322 21:25:28.131" starttime="20190322 21:23:39.024"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="5">Critical Tests</stat>
+<stat fail="0" pass="5">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="2">core</stat>
+<stat fail="0" pass="2">full</stat>
+<stat fail="0" pass="1">smoke</stat>
+<stat fail="0" pass="1">TC01</stat>
+<stat fail="0" pass="1">TC02</stat>
+<stat fail="0" pass="1">TC03</stat>
+<stat fail="0" pass="1">TC04</stat>
+<stat fail="0" pass="1">TC05</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="MedianCalculator" pass="5">MedianCalculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
