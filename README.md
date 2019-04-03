@@ -56,11 +56,10 @@ pip install distributor
 pip install robotframework
 pip install robotframework-appiumlibrary
 
-=======================
-
 Set the ANDROID_HOME variable to C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk from C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platforms
 Then in the cmd prompt also run the below cmd, go to python path and set the below path once:
 C:\Users\Sindhu_Pichappa\.windows-build-tools\python27\Scripts> set PATH=$ANDROID_HOME/build-tools/$(ls -tr $ANDROID_HOME/build-tools/
+
 ----
 PATH values such as python27, etc are to be set as like below in your system's environment variable after installing all the necessary component list:
 
