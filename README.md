@@ -60,6 +60,10 @@ pip install robotframework-appiumlibrary
 Set the ANDROID_HOME variable to C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk from C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platforms
 Then in the cmd prompt also run the below cmd, go to python path and set the below path once:
 C:\Users\Sindhu_Pichappa\.windows-build-tools\python27\Scripts> set PATH=$ANDROID_HOME/build-tools/$(ls -tr $ANDROID_HOME/build-tools/
+----
+PATH values such as python27, etc are to be set as like below in your system's environment variable after installing all the necessary component list:
+
+C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platform-tools;"C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\Scripts;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\DLLs;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\Lib;C:\Python27\Lib\lib-tk";C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platforms;C:\Program Files\nodejs\;C:\Program Files (x86)\Java\jre1.8.0_201\bin;C:\Program Files\Android\Android Studio\bin;C:\Program Files\dotnet\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk;C:\Users\Sindhu_Pichappa\.windows-build-tools\python27;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm\node_modules\.bin;C:\Users\Sindhu_Pichappa\AppData\Local\Microsoft\WindowsApps;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm
 
 Directory Layout 
 
