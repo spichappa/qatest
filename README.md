@@ -57,6 +57,7 @@ pip install robotframework
 pip install robotframework-appiumlibrary
 
 =======================
+
 Set the ANDROID_HOME variable to C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk from C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platforms
 Then in the cmd prompt also run the below cmd, go to python path and set the below path once:
 C:\Users\Sindhu_Pichappa\.windows-build-tools\python27\Scripts> set PATH=$ANDROID_HOME/build-tools/$(ls -tr $ANDROID_HOME/build-tools/
@@ -66,6 +67,15 @@ PATH values such as python27, etc are to be set as like below in your system's e
 C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platform-tools;"C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\Scripts;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\DLLs;C:\Users\Sindhu_Pichappa\.windows-build-tools\Python27\Lib;C:\Python27\Lib\lib-tk";C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk\platforms;C:\Program Files\nodejs\;C:\Program Files (x86)\Java\jre1.8.0_201\bin;C:\Program Files\Android\Android Studio\bin;C:\Program Files\dotnet\;C:\Windows\Microsoft.NET\Framework64\v4.0.30319;C:\Users\Sindhu_Pichappa\AppData\Local\Android\Sdk;C:\Users\Sindhu_Pichappa\.windows-build-tools\python27;C:\Program Files\nodejs\node_modules\npm\node_modules\npm-lifecycle\node-gyp-bin;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm\node_modules\windows-build-tools\node_modules\.bin;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm\node_modules\.bin;C:\Users\Sindhu_Pichappa\AppData\Local\Microsoft\WindowsApps;C:\Users\Sindhu_Pichappa\AppData\Roaming\npm
 
 Directory Layout 
+
+Ingeneral for application automation project, we maintain multiple directories such as
+  - testcases = (folder containing all list of test suites)
+  - testdata = (place to keep all reports and log files)
+  - resources = (folder to maintain common methods/keywords in the resource files which is specifically written for a particular project's to make use of the common keywords across all test suites)
+  - config = ( commonly used config variables and page elements key values are stored under this folder directory)
+  - lib = ( common .py file to be make use between all test suites of same project)
+
+But since this is a small project code I have kept all the keywords and variables inside the same suite file itself.
 
 qatest/
 
